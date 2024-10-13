@@ -74,10 +74,12 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
-      - name: Upload artifact
+      - name: Upload Artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./out
+          path: .next  # Use .next instead of ./out
+          name: github-pages
+          retention-days: 1
 
   # Deployment job
   deploy:
