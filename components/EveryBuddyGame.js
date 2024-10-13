@@ -61,27 +61,27 @@ function EveryBuddyGame({options, setOptions, highScore, setHighScore}) {
   else {
     return (
             <div id="game">
-              <h1>Score: {score}</h1>
-            <div id="cards">
-              {shown.map((card, index) => (
-                      <div className="card" key={index}>
-                      <Card
-                  id={index}
-                  cardId={card.cardId}
-                  game={game}
-                  shown={shown}
-                  setShown={setShown}
-                  selectedCount={selectedCount}
-                  setSelectedCount={setSelectedCount}
-                  selectedIndexes={selectedIndexes}
-                  setSelectedIndexes={setSelectedIndexes}
-                  topOfDeck={topOfDeck}
-                  setTopOfDeck={setTopOfDeck}
-                      />
-                      </div>
-              ))}
+                <h1>Score: {score}</h1>
+                <div id="cards">
+                {shown.map((card, index) => (
+                        <div className="card" key={index}>
+                        <Card
+                    id={index}
+                    cardId={card.cardId}
+                    game={game}
+                    shown={shown}
+                    setShown={setShown}
+                    selectedCount={selectedCount}
+                    setSelectedCount={setSelectedCount}
+                    selectedIndexes={selectedIndexes}
+                    setSelectedIndexes={setSelectedIndexes}
+                    topOfDeck={topOfDeck}
+                    setTopOfDeck={setTopOfDeck}
+                        />
+                        </div>
+                ))}
+                </div>
             </div>
-        </div>
     )
   }
 }
