@@ -70,10 +70,6 @@ export default function App() {
     body {
       text-align: center;
       font-family: -apple-system, sans-serif;
-      #background-image: url(EveryBuddyBackground.png);
-      #background-repeat: no-repeat;
-      #background-attachment: fixed;
-      #background-size: 100%;
     }
     button {
       background: #00ad9f;
