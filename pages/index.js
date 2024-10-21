@@ -65,6 +65,7 @@ export default function App() {
           </div>
         </div>
       )}
+      <img src="https://www.cutercounter.com/hits.php?id=huxqxcap&nd=6&style=1" border="0" alt="visit counter"></img>
           <style jsx global>
   {`
     body {
